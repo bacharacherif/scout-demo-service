@@ -10,6 +10,7 @@ RUN apk add --no-cache \
   nodejs
 
 COPY package.json ./
+COPY .npmrc ./
 
 RUN  apk add --no-cache npm \
  && npm i --no-optional \
